@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+$main-color: #4aa35a;
+
+.form{
+    background-color: #fff;
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    h2{
+        color: #494949;
+        font-size: 25px;
+        font-weight: 900;
+    }
+    p{
+        color: #49494999;
+    }
+    a{
+        text-decoration: none;
+        color: #3a3a3d;
+        &.second-link{
+            color: #4aa35a;
+        }
+    }
+    button{
+        border: none;
+        border-radius: 8px;
+        padding: 0.5rem 1rem;
+        margin: 1rem 0 0;
+        &.primary-but{
+            background-color: #4aa35a;
+            color: #fff;
+            text-align: center;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+}
