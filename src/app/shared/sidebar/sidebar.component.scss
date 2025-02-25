@@ -1,0 +1,31 @@
+section{
+    background-color: #1F263E;
+    color: #ffffffa7;
+    border-top-right-radius: 58px;
+    height: 100vh;
+    ul{
+        list-style: none;
+        padding: 0;
+        li{
+            a{
+                padding: 5px;
+                display: block;
+                color: #fff;
+               text-decoration: none; 
+            }
+        }
+    }
+    .active{
+        background-color: rgba(0, 146, 77, 0.10);
+        position: relative;
+        &::before{
+            content: '';
+            height: 100%;
+            width: 4px;
+            top: 0;
+            left: 0;
+            position: absolute;
+            background-color: #009247;
+        }
+    }
+}
