@@ -23,10 +23,10 @@ export class AuthService {
   }
 
   login(data: FormGroup):Observable<any>{
-    return this._HttpClient.post('https://upskilling-egypt.com:3006/api/v1/Users/Login',data);
+    return this._HttpClient.post('Users/Login',data);
   }
   register(data: FormData):Observable<any>{
-    return this._HttpClient.post('https://upskilling-egypt.com:3006/api/v1/Users/Register',data);
+    return this._HttpClient.post('Users/Register',data);
   }
   forgot(email: string): Observable<any> {
     return this._HttpClient.post('https://upskilling-egypt.com:3006/api/v1/Users/Reset/Request', { email });

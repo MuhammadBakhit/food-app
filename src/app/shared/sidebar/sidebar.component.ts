@@ -39,7 +39,7 @@ menu: IMenu[]=[
 {
   title: 'Categories',
   icon: 'fa-list',
-  menuLink: '/dashboard',
+  menuLink: '/dashboard/admin/categories',
   isActive: this.isAdmin()
 },
 {

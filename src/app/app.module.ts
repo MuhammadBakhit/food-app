@@ -6,9 +6,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { NgxDropzoneModule } from 'ngx-dropzone';
-@NgModule({
+import { SharedModule } from './shared/shared.module';@NgModule({
+
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -20,7 +21,8 @@ import { NgxDropzoneModule } from 'ngx-dropzone';
       progressBar: true,
       
     }),
-    NgxDropzoneModule
+    NgxDropzoneModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
